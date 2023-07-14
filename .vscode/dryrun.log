@@ -1,0 +1,36 @@
+make all --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/yukijudai/proj-macos/Items'
+[ ! -d obj/./ ] & mkdir -p obj/./
+echo "Compiling: " ContoursTest.cpp
+clang -O3 -Wall -v -g -DMACOS  -I. -I../opencv-3.4.7-mac/mpeg/include -I../opencv-3.4.7-mac/mpeg/include/opencv    --std=c++11 -c ContoursTest.cpp -o obj/./ContoursTest.o
+[ ! -d obj/./ ] & mkdir -p obj/./
+echo "Compiling: " ImageTransformation.cpp
+clang -O3 -Wall -v -g -DMACOS  -I. -I../opencv-3.4.7-mac/mpeg/include -I../opencv-3.4.7-mac/mpeg/include/opencv    --std=c++11 -c ImageTransformation.cpp -o obj/./ImageTransformation.o
+[ ! -d obj/./ ] & mkdir -p obj/./
+echo "Compiling: " ViedoCapture.cpp
+clang -O3 -Wall -v -g -DMACOS  -I. -I../opencv-3.4.7-mac/mpeg/include -I../opencv-3.4.7-mac/mpeg/include/opencv    --std=c++11 -c ViedoCapture.cpp -o obj/./ViedoCapture.o
+[ ! -d obj/./ ] & mkdir -p obj/./
+echo "Compiling: " colorDetect.cpp
+clang -O3 -Wall -v -g -DMACOS  -I. -I../opencv-3.4.7-mac/mpeg/include -I../opencv-3.4.7-mac/mpeg/include/opencv    --std=c++11 -c colorDetect.cpp -o obj/./colorDetect.o
+[ ! -d obj/./ ] & mkdir -p obj/./
+echo "Compiling: " colorSegmentation.cpp
+clang -O3 -Wall -v -g -DMACOS  -I. -I../opencv-3.4.7-mac/mpeg/include -I../opencv-3.4.7-mac/mpeg/include/opencv    --std=c++11 -c colorSegmentation.cpp -o obj/./colorSegmentation.o
+[ ! -d obj/./ ] & mkdir -p obj/./
+echo "Compiling: " dataTypes.cpp
+clang -O3 -Wall -v -g -DMACOS  -I. -I../opencv-3.4.7-mac/mpeg/include -I../opencv-3.4.7-mac/mpeg/include/opencv    --std=c++11 -c dataTypes.cpp -o obj/./dataTypes.o
+[ ! -d obj/./ ] & mkdir -p obj/./
+echo "Compiling: " detect.cpp
+clang -O3 -Wall -v -g -DMACOS  -I. -I../opencv-3.4.7-mac/mpeg/include -I../opencv-3.4.7-mac/mpeg/include/opencv    --std=c++11 -c detect.cpp -o obj/./detect.o
+[ ! -d obj/./ ] & mkdir -p obj/./
+echo "Compiling: " main.cpp
+clang -O3 -Wall -v -g -DMACOS  -I. -I../opencv-3.4.7-mac/mpeg/include -I../opencv-3.4.7-mac/mpeg/include/opencv    --std=c++11 -c main.cpp -o obj/./main.o
+[ ! -d obj/./ ] & mkdir -p obj/./
+echo "Compiling: " morphology.cpp
+clang -O3 -Wall -v -g -DMACOS  -I. -I../opencv-3.4.7-mac/mpeg/include -I../opencv-3.4.7-mac/mpeg/include/opencv    --std=c++11 -c morphology.cpp -o obj/./morphology.o
+[ ! -d obj/./ ] & mkdir -p obj/./
+echo "Compiling: " touchbar.cpp
+clang -O3 -Wall -v -g -DMACOS  -I. -I../opencv-3.4.7-mac/mpeg/include -I../opencv-3.4.7-mac/mpeg/include/opencv    --std=c++11 -c touchbar.cpp -o obj/./touchbar.o
+echo "Generating executable file..." test
+clang -O3 -Wall -v -g -DMACOS  -I. -I../opencv-3.4.7-mac/mpeg/include -I../opencv-3.4.7-mac/mpeg/include/opencv    --std=c++11 obj/./ContoursTest.o obj/./ImageTransformation.o obj/./ViedoCapture.o obj/./colorDetect.o obj/./colorSegmentation.o obj/./dataTypes.o obj/./detect.o obj/./main.o obj/./morphology.o obj/./touchbar.o -o test  -L../opencv-3.4.7-mac/mpeg/lib -lopencv_core -lopencv_imgproc  -lopencv_video  -lopencv_highgui -lopencv_imgcodecs -lopencv_videoio -L../opencv-3.4.7-mac/mpeg/3rdparty/lib -lIlmImf    -llibjasper -llibjpeg-turbo     -llibtiff   -lzlib -llibpng -llibwebp -llibprotobuf -lstdc++  -L/usr/local/opt/ffmpeg@4/lib -lavcodec -lavfilter -lavformat -lavresample -lavutil -lswscale -framework IOKit -framework Foundation -framework Cocoa -framework AVFoundation -framework CoreMedia -framework CoreVideo  
+make: Leaving directory `/Users/yukijudai/proj-macos/Items'
+ 
